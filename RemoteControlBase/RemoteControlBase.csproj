@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{148AE25C-8386-4A6E-B42F-C18F7325EFE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iWay.RemoteControlBase</RootNamespace>
+    <AssemblyName>RemoteControlBase</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consts.cs" />
+    <Compile Include="Network\ConnectType.cs" />
+    <Compile Include="Network\SocketTalker.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Content.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Data\TextInfo.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Exceptions\KnownException.cs" />
+    <Compile Include="Protocol\RemoteExplorer\ProtocolTypes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\BasicReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\CopyContentsReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\CreateDirectoryReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\GetContentInfoReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\GetContentReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\ListAllDirectoriesReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\ListAllFilesReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\ListContentsReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\MoveContentsReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\PutContentReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\RenameContentReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\StartProcessReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\BasicRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Requests\DeleteContentsReq.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\CopyContentsRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\CreateDirectoryRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\DeleteContentsRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\GetContentInfoRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\GetContentRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\ListAllDirectoriesRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\ListAllFilesRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\ListContentsRes.cs" />
+    <Compile Include="Protocol\RemoteDesktop\Commands.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\MoveContentsRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\PutContentRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\RenameContentRes.cs" />
+    <Compile Include="Protocol\RemoteExplorer\Responses\StartProcessRes.cs" />
+    <Compile Include="Utilities\BitmapUtils.cs" />
+    <Compile Include="Utilities\BytesUtils.cs" />
+    <Compile Include="Utilities\CalcUtils.cs" />
+    <Compile Include="Utilities\FormsUtils.cs" />
+    <Compile Include="Utilities\InputSimulator.cs" />
+    <Compile Include="Utilities\LogUtils.cs" />
+    <Compile Include="Utilities\MailSender.cs" />
+    <Compile Include="Utilities\NetUtils.cs" />
+    <Compile Include="Utilities\PowerUtils.cs" />
+    <Compile Include="Utilities\RegistryUtils.cs" />
+    <Compile Include="Utilities\SecurityUtils.cs" />
+    <Compile Include="Utilities\StreamUtils.cs" />
+    <Compile Include="Utilities\StringUtils.cs" />
+    <Compile Include="Utilities\TcpUtils.cs" />
+    <Compile Include="Utilities\ThreadUtils.cs" />
+    <Compile Include="Utilities\UdpUtils.cs" />
+    <Compile Include="Utilities\WinAPIUtils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

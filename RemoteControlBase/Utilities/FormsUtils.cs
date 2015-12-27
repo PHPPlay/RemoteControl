@@ -1,0 +1,180 @@
+﻿using System.Windows.Forms;
+
+namespace iWay.RemoteControlBase.Utilities
+{
+    public static class FormsUtils
+    {
+        public static string KeysToString(Keys key)
+        {
+            return key.ToString();
+        }
+
+        public static Keys StringToKeys(string keyString)
+        {
+            string key = keyString.ToUpper();
+            switch (key)
+            {
+                case "A":
+                    return Keys.A;
+                case "B":
+                    return Keys.B;
+                case "C":
+                    return Keys.C;
+                case "D":
+                    return Keys.D;
+                case "E":
+                    return Keys.E;
+                case "F":
+                    return Keys.F;
+                case "G":
+                    return Keys.G;
+                case "H":
+                    return Keys.H;
+                case "I":
+                    return Keys.I;
+                case "J":
+                    return Keys.J;
+                case "K":
+                    return Keys.K;
+                case "L":
+                    return Keys.L;
+                case "M":
+                    return Keys.M;
+                case "N":
+                    return Keys.N;
+                case "O":
+                    return Keys.O;
+                case "P":
+                    return Keys.P;
+                case "Q":
+                    return Keys.Q;
+                case "R":
+                    return Keys.R;
+                case "S":
+                    return Keys.S;
+                case "T":
+                    return Keys.T;
+                case "U":
+                    return Keys.U;
+                case "V":
+                    return Keys.V;
+                case "W":
+                    return Keys.W;
+                case "X":
+                    return Keys.X;
+                case "Y":
+                    return Keys.Y;
+                case "Z":
+                    return Keys.Z;
+                case "0":
+                    return Keys.NumPad0;
+                case "1":
+                    return Keys.NumPad1;
+                case "2":
+                    return Keys.NumPad2;
+                case "3":
+                    return Keys.NumPad3;
+                case "4":
+                    return Keys.NumPad4;
+                case "5":
+                    return Keys.NumPad5;
+                case "6":
+                    return Keys.NumPad6;
+                case "7":
+                    return Keys.NumPad7;
+                case "8":
+                    return Keys.NumPad8;
+                case "9":
+                    return Keys.NumPad9;
+                case "-":
+                    return Keys.OemMinus;
+                case "+":
+                    return Keys.Oemplus;
+                case "F1":
+                    return Keys.F1;
+                case "F2":
+                    return Keys.F2;
+                case "F3":
+                    return Keys.F3;
+                case "F4":
+                    return Keys.F4;
+                case "F5":
+                    return Keys.F5;
+                case "F6":
+                    return Keys.F6;
+                case "F7":
+                    return Keys.F7;
+                case "F8":
+                    return Keys.F8;
+                case "F9":
+                    return Keys.F9;
+                case "F10":
+                    return Keys.F10;
+                case "F11":
+                    return Keys.F11;
+                case "F12":
+                    return Keys.F12;
+                case "UP":
+                    return Keys.Up;
+                case "DOWN":
+                    return Keys.Down;
+                case "LEFT":
+                    return Keys.Left;
+                case "RIGHT":
+                    return Keys.Right;
+                case "DEL":
+                case "DELETE":
+                    return Keys.Delete;
+                case "PAGEUP":
+                    return Keys.PageUp;
+                case "PAGEDOWN":
+                    return Keys.PageDown;
+                case "HOME":
+                    return Keys.Home;
+                case "END":
+                    return Keys.End;
+                case "\b":
+                case "BACK":
+                case "BACKSPACE":
+                    return Keys.Back;
+                case "\r":
+                case "ENTER":
+                    return Keys.Enter;
+                case "CTL":
+                case "LCTL":
+                case "LCONTROL":
+                    return Keys.LControlKey;
+                case "RCTL":
+                case "RCONTROL":
+                    return Keys.RControlKey;
+                case "SHIFT":
+                case "LSHIFT":
+                    return Keys.LShiftKey;
+                case "RSHIFT":
+                    return Keys.RShiftKey;
+                case "ALT":
+                case "LALT":
+                    return Keys.Alt;
+                case "RALT":
+                    return Keys.Alt;
+                case "WIN":
+                case "LWIN":
+                case "LWINDOWN":
+                    return Keys.LWin;
+                case "RWIN":
+                case "RWINDOWS":
+                    return Keys.RWin;
+                case "ESC":
+                case "ESCAPE":
+                    return Keys.Escape;
+                case "TAB":
+                    return Keys.Tab;
+                case "CAPS":
+                case "CAPSLOCK":
+                    return Keys.CapsLock;
+                default:
+                    return Keys.Space;
+            }
+        }
+    }
+}
